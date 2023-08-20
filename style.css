@@ -67,44 +67,44 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: tanpearl;
-  src: url(/font/TAN-PEARL.otf),
-        url(/font/TAN-PEARL.woff2), 
-       url(/font/TAN-PEARL.woff), 
-       url(/font/TAN-PEARL.ttf); 
+  src: url(font/TAN-PEARL.otf),
+        url(font/TAN-PEARL.woff2), 
+       url(font/TAN-PEARL.woff), 
+       url(font/TAN-PEARL.ttf); 
 }
 
 @font-face {
   font-family: hatton;
-  src: url(/font/Hatton.otf); 
+  src: url(font/Hatton.otf); 
 }
 
 @font-face {
   font-family: monarch;
-  src: url(/font/Monarch.otf),
-        url(/font/Monarch.eot),
-        url(/font/Monarch.woff2), 
-       url(/font/Monarch.woff), 
-       url(/font/Monarch.ttf); 
+  src: url(font/Monarch.otf),
+        url(font/Monarch.eot),
+        url(font/Monarch.woff2), 
+       url(font/Monarch.woff), 
+       url(font/Monarch.ttf); 
 }
 @font-face {
   font-family: orelo;
-  src: url(/font/Orelo.otf),
-        url(/font/Orelo.woff2), 
-       url(/font/Orelo.woff), 
-       url(/font/Orelo.ttf)
-        url(/font/Orelo.eot); 
+  src: url(font/Orelo.otf),
+        url(font/Orelo.woff2), 
+       url(font/Orelo.woff), 
+       url(font/Orelo.ttf)
+        url(font/Orelo.eot); 
 }
 @font-face {
   font-family: ogg;
-  src: url(/font/Ogg.ttf); 
+  src: url(font/Ogg.ttf); 
 }
 @font-face {
   font-family: voyage;
-  src: url(/font/Voyage.otf); 
+  src: url(font/Voyage.otf); 
 }
 @font-face {
   font-family: voyagebold;
-  src: url(/font/Voyage-bold.otf); 
+  src: url(font/Voyage-bold.otf); 
 }
 /* Blobs */
 .blob-cont {
