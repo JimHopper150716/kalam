@@ -66,10 +66,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: 'tanpearl';
-  src: url('font/TAN-PEARL.otf') format('embedded-opentype');
-  src: url('font/TAN-PEARL.woff2') format('woff2'), 
-       url('font/TAN-PEARL.woff') format('woff'), 
-       url('font/TAN-PEARL.ttf')  format('truetype'), 
+  src: url('TAN-PEARL.otf'),
+        url('TAN-PEARL.woff2'), 
+       url('font/TAN-PEARL.woff'), 
+       url('font/TAN-PEARL.ttf'); 
 }
 /* Blobs */
 .blob-cont {
