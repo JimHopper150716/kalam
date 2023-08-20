@@ -95,6 +95,14 @@ h1, h2, h3, h4, h5, h6 {
         url(font/Orelo.eot); 
 }
 @font-face {
+  font-family: morgenwalsh;
+  src: url(font/Morgenwalsh.otf),
+        url(font/Morgenwalsh.woff2), 
+       url(font/Morgenwalsh.woff), 
+       url(font/Morgenwalsh.ttf)
+        url(font/Morgenwalsh.eot); 
+}
+@font-face {
   font-family: ogg;
   src: url(font/Ogg.ttf); 
 }
