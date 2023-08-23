@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>The Kalam Project</title>
+  <link href="https://fonts.cdnfonts.com/css/recoleta" rel="stylesheet">
+                <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="favicon.png">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="nav">
+  <h2>KALAM.</h2>
+  <div class="menu">
+    <a href="https://kalam.one"><p  style="font-family:hatton;">Home</p></a>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="hero-text">
+    <h1>About.</h1>
+    <p style="font-family:monarch">KALAM. was founded by STEM enthusiast <a href="https://www.linkedin.com/in/aditya-chaudhary-089028279/">Aditya Chaudhary</a> as a High School student in 2022, aiming to leave behind a legacy of change for the betterment of society. He is passionate about tinkering with new ideas, and doing theoretical research in Physics and Mathematics domain. Apart from winning honors for his inventions, he is constantly working on his new project. This year, after recieving diplomas in quantum computing from various international programs, he is partnering with a quantum non-profit and heading their research department to educate more young students about this new frontier of science & technology. He is also aiding a couple of AI/ML startups in India with product management and development operations. He is currently being aided in KALAM. incubations by <a href="https://www.linkedin.com/in/anand-pandey-980118211/">Anand Pandey</a> and <a href="https://www.linkedin.com/in/arush-banerjee-0039b9278/"></a> and further their scope of change.</p>
+    
+  </div>
+  <div class="blob-cont">
+    <div class="yellow blob"></div>
+    <div class="red blob"></div>
+    <div class="green blob"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<svg>
+  <filter id='noiseFilter'>
+    <feTurbulence 
+      type='fractalNoise' 
+      baseFrequency='0.6' 
+      stitchTiles='stitch'/>
+     <feColorMatrix in="colorNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
+        <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+        <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
+  </filter>
+  
+</svg>
+
+<!--
+<div class="credit"  style="font-family:monarch;">An Initiative by Aditya Chaudhary.</div>
+ Not required 
+<a href="https://www.youtube.com/watch?v=_ZFghigBmqo" target="_blank" class="youtube">Watch on YouTube</a>-->
+<!-- partial -->
+
+  
+</body>
+</html>
