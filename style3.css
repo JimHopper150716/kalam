@@ -1,0 +1,296 @@
+:root {
+  --bg: #F0DBA5;
+  --text: #151515;
+  --yellow: #EDB74D;
+  --red: #EB6666;
+  --green: #6FB18A;
+}
+
+html{
+    font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3em;
+  
+  background-color: var(--bg);
+  
+  
+  margin: 0 10em;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: normal;
+  margin: 0;
+  font-family: tanpearl;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-family: tanpearl;
+}
+
+p {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body::before,
+body::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  opacity: 40%;
+}
+
+body::before {
+  background: #8C8C8C;
+  filter: url(#noiseFilter);
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 0.35;
+}
+
+@font-face {
+  font-family: tanpearl;
+  src: url(font/TAN-PEARL.otf),
+        url(font/TAN-PEARL.woff2), 
+       url(font/TAN-PEARL.woff), 
+       url(font/TAN-PEARL.ttf); 
+}
+
+@font-face {
+  font-family: hatton;
+  src: url(font/Hatton.otf); 
+}
+
+@font-face {
+  font-family: monarch;
+  src: url(font/Monarch.otf),
+        url(font/Monarch.eot),
+        url(font/Monarch.woff2), 
+       url(font/Monarch.woff), 
+       url(font/Monarch.ttf); 
+}
+@font-face {
+  font-family: orelo;
+  src: url(font/Orelo.otf),
+        url(font/Orelo.woff2), 
+       url(font/Orelo.woff), 
+       url(font/Orelo.ttf)
+        url(font/Orelo.eot); 
+}
+@font-face {
+  font-family: morgenwalsh;
+  src: url(font/Morgenwalsh.otf)  format("opentype"),
+        url(font/Morgenwalsh.woff2)  format("woff2"), 
+       url(font/Morgenwalsh.woff) format("woff"), 
+       url(font/Morgenwalsh.ttf)  format("truetype")
+        url(font/Morgenwalsh.eot) format("woff"); 
+}
+@font-face {
+  font-family: ogg;
+  src: url(font/Ogg.ttf); 
+}
+@font-face {
+  font-family: voyage;
+  src: url(font/Voyage.otf); 
+}
+@font-face {
+  font-family: voyagebold;
+  src: url(font/Voyage-bold.otf); 
+}
+/* Blobs */
+.blob-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+  height: 50rem;
+  width: 50rem;
+  position: relative;
+  right: 5em;
+}
+
+
+.blob {
+  border-radius: 10rem;
+  filter: blur(6rem);
+}
+
+.yellow {
+  background-color: var(--yellow);
+  position: absolute;
+  top: 20rem;
+  left: 10rem;
+  height: 20rem;
+  width: 20rem;
+  
+  animation: yellow 8s infinite ease;
+}
+
+.green {
+  background-color: var(--green);
+  position: absolute;
+  top: 8rem;
+  right: -2rem;
+  height: 20rem;
+  width: 25rem;
+  
+  animation: green 8s infinite ease;
+}
+
+.red {
+  background-color: var(--red);
+  position: absolute;
+  right: 0;
+  top: 30rem;
+  height: 25rem;
+  width: 20rem;
+  
+  animation: red 8s infinite linear;
+}
+
+@keyframes yellow {
+  0% {top: 20rem; left: 10rem; transform: scale(1);}
+  30% {top: 30rem; left: 15rem; transform: scale(1.2);}
+  60% {top: 10rem; left: 20rem; transform: scale(1.3);}
+  100% {top: 20rem; left: 10rem; transform: scale(1);}
+}
+
+@keyframes green {
+  0% {top: 8rem; right: -2rem; transform: scale(1.2);}
+  30% {top: 30rem; right: -2rem;transform: scale(1);}
+  60% {top: 20rem; right: 10rem;transform: scale(1);}
+  100% {top: 8rem; right: -2rem; transform: scale(1.2);}
+}
+
+@keyframes red {
+  0% {top: 25rem; right: 0rem; transform: scale(1);}
+  30% {top: 15rem; right: 15rem;transform: scale(1.4);}
+  60% {top: 25rem; right: 10rem;transform: scale(1);}
+  100% {top: 25rem; right: 0rem; transform: scale(1);}
+}
+
+
+/* the rest of the page */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 130%;
+  gap: 3rem;
+  background:
+        linear-gradient(to right, #151515 1px, transparent 1px) 0 0,
+        linear-gradient(to right, #151515 1px, transparent 1px) 0 100%,
+        linear-gradient(to left, #151515 1px, transparent 1px) 100% 0,
+        linear-gradient(to left, #151515 1px, transparent 1px) 100% 100%,
+        linear-gradient(to bottom, #151515 1px, transparent 1px) 0 0,
+        linear-gradient(to bottom, #151515 1px, transparent 1px) 100% 0,
+        linear-gradient(to top, #151515 1px, transparent 1px) 0 100%,
+        linear-gradient(to top, #151515 1px, transparent 1px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 2rem 2rem;
+      
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3em;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+}
+
+.button {
+  padding: 1em 3em;
+  border: .1rem solid var(--text);
+  font-size: 1.8rem;
+}
+
+.primary {
+  background-color: var(--text);
+  color: #DED3B6;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    margin: 1em;
+  }
+}
+
+
+
+.credit {
+  text-decoration: none;
+  position: absolute;
+  padding: 1em 2em;
+  bottom: 1em;
+  right: 1em;
+  z-index: 9999;
+  font-family: 'Roboto';
+  color: #1c1c1c;
+  font-size: 2rem;
+}
+
+
+/* Not required */
+.youtube {
+  text-decoration: none;
+  position: absolute;
+  padding: 1em 2em;
+  bottom: 1em;
+  right: 1em;
+  z-index: 9999;
+  font-family: 'Roboto';
+  color: #1c1c1c;
+  border: .1rem solid #1c1c1c;
+  border-radius: .5rem;
+}
+
+.youtube:hover {
+  background-color: rgb(28,28,28,0.14);
+}
